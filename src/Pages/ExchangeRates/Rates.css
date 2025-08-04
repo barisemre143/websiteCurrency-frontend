@@ -1,0 +1,84 @@
+body {
+  background-color: #000;
+  color: white;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.exchange-container {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #111;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.exchange-container h1 {
+  font-size: 32px;
+  color: #3b82f6;
+  margin-bottom: 24px;
+}
+
+.currency-selector {
+  margin-bottom: 20px;
+}
+
+.currency-selector label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.currency-selector select {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #3b82f6;
+  border-radius: 6px;
+  background-color: #000;
+  color: white;
+}
+
+.search-input {
+  width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #3b82f6;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.exchange-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.exchange-table th,
+.exchange-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.exchange-table th {
+  background-color: #3b82f6;
+  color: white;
+  font-size: 18px;
+}
+
+.exchange-table tr:hover {
+  background-color: #2b2b2b;
+}
+
+.loading-text {
+  font-size: 18px;
+  color: #3b82f6;
+  margin-top: 20px;
+}

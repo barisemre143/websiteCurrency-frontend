@@ -1,0 +1,100 @@
+.home-container {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #cce7ff;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.map-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #cce7ff;
+}
+
+.selection-bar {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #111;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.selection-bar label {
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 350px;
+  color: white;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.modal input[type="number"] {
+  width: 100%;
+  margin-top: 6px;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.close-button {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.instruction-text {
+  position: absolute;
+  top: 400px;
+  left: -80px;
+  z-index: 1001;
+  color: #000000;
+  font-size: 13.5px;
+  line-height: 1.6;
+  max-width: 230px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.instruction-text p {
+  margin-bottom: 12px;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 8px 10px;
+  border-left: 3px solid #00bfff;
+  border-radius: 6px;
+}

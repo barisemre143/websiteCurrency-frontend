@@ -1,0 +1,164 @@
+
+/* Başlık */
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Seçenek kutuları ve butonların bulunduğu alan */
+.selector-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Seçenek kutuları */
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+/* Uygula butonu */
+.apply-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #0056b3;
+}
+
+.map-container {
+  margin-left: 200px;
+  margin-top: -180px; /* Önceki değeri azaltarak haritayı yukarı al */
+  right: 200px;
+  left: -100px;
+  top : 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cce7ff !important; /* Haritanın çevresini de mavi yap */
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.map-container {
+  position: relative; /* Haritanın butonları kapatmaması için */
+  z-index: 0; /* Butonların haritanın önünde olması için */
+}
+
+.controls-container {
+  position: relative; /* Butonların üstte olmasını sağla */
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Butonlar arasına boşluk bırak */
+  margin-bottom: 10px; /* Haritanın üstünde biraz boşluk bırak */
+}
+
+button {
+  background-color: transparent; /* Arkaplanı tamamen şeffaf yap */
+  border: none; /* Kenarlıkları kaldır */
+  box-shadow: none; /* Gölgeyi tamamen kaldır */
+  padding: 0;
+  font-size: 12px; /* Daha okunaklı hale getirmek için büyütülebilir */
+  cursor: pointer;
+}
+
+.selection-bar {
+  position: absolute;
+  top: 160px;
+  left: -80px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #111;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.selection-bar label {
+  color: white;
+  font-weight: bold;
+}
+
+.selection-bar select {
+  width: 250px; /* Biraz daha büyük yapıldı */
+  height: 48px; /* Biraz daha büyük yapıldı */
+  padding: 0 14px;
+  border-radius: 6px;
+  border: 2px solid #3b82f6;
+  font-size: 14px;
+  background-color: #000;
+  color: #3b82f6;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg%20fill%3D'%233b82f6'%20viewBox%3D'0%200%2024%2024'%20xmlns%3D'http://www.w3.org/2000/svg'%3E%3Cpath%20d%3D'M7%2010l5%205%205-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px 16px;
+  padding-right: 40px;
+  transition: background-color 0.3s, color 0.3s, border 0.3s;
+}
+
+.selection-bar select:hover {
+  background-color: #3b82f6;
+  color: white;
+  border-color: white;
+}
+
+.selection-bar select:focus {
+  outline: none;
+  box-shadow: 0 0 6px #3b82f6;
+  border-color: #3b82f6;
+}
+
+.selection-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.selected-currency-box {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  margin-left: 20px;
+  transform: translateY(-50%);
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.selected-currency-box span {
+  color: #6C63FF;
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.selected-currency-box:hover {
+  transform: translateY(-50%) scale(1.05);
+}
