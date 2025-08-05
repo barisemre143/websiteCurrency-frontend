@@ -48,7 +48,7 @@ export const fetchExchangeRates = async (base = "USD") => {
 // Backend'den döviz kurları al
 export const fetchBackendRates = async () => {
   try {
-    const API_URL = process.env.REACT_APP_API_URL || "https://websitecurrency-backend.onrender.com";
+    const API_URL = process.env.REACT_APP_API_URL || (process.env.NODE_ENV === 'production' ? "https://websitecurrency-backend.onrender.com" : "http://localhost:5000");
     const response = await axios.get(`${API_URL}/api/currency/rates`);
     return response.data.rates;
   } catch (error) {
